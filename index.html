@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zowlak Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="password-container">
+        <div class="password">Zowlak Password Generator</div>
+        <button class="password-copy">
+          <img src="shape.svg" />
+        </button>
+      </div>
+
+      <div class="options-container">
+        <div class="lengh-container">
+          <div class="text">Character length</div>
+          <div class="length">10</div>
+        </div>
+
+        <input type="range" min="8" max="24" value="10" class="slider" />
+
+        <div class="input-container">
+          <input type="checkbox" id="upper" />
+          <div class="text">Include uppercase letters (MAJ)</div>
+        </div>
+        <div class="input-container">
+          <input type="checkbox" id="lower" />
+          <div class="text">Include lowercase letters (min)</div>
+        </div>
+        <div class="input-container">
+          <input type="checkbox" id="numbers" />
+          <div class="text">Include numbers</div>
+        </div>
+        <div class="input-container">
+          <input type="checkbox" id="symbols" />
+          <div class="text">Include symbols</div>
+        </div>
+
+        <button class="btn-generate">Generate password</button>
+      </div>
+    </div>
+  </body>
+</html>
